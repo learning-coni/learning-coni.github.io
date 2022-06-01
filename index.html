@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/main.css?after" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+    <title>J's</title>
+  </head>
+  <body>
+    <div class="entry">
+      <div class="square">
+        <div class="order1"></div>
+        <div class="order2"></div>
+        <div class="order3"></div>
+        <div class="order4"></div>
+      </div>
+      <canvas></canvas>
+      <div class="circle"></div>
+    </div>
+    <div class="container">
+      <header>
+        <nav>
+          <ul class="pc">
+            <li class="poing" onclick="navFunction('home', 0)">HOME</li>
+            <li class="poing" onclick="navFunction('aboutMe', 1)">ABOUT</li>
+            <li class="poing" onclick="navFunction('skills', 2)">SKILLS</li>
+            <li class="poing" onclick="navFunction('projects', 3)">PROJECTS</li>
+            <li class="poing" onclick="navFunction('contact', 4)">CONTACT</li>
+          </ul>
+          <ul class="mobile">
+            <li data-ori="Home" onclick="navFunction('home', 0)">H</li>
+            <li data-ori="About" onclick="navFunction('aboutMe', 1)">A</li>
+            <li data-ori="Skills" onclick="navFunction('skills', 2)">S</li>
+            <li data-ori="Projects" onclick="navFunction('projects', 3)">P</li>
+            <li data-ori="Contact" onclick="navFunction('contact', 4)">C</li>
+          </ul>
+        </nav>
+      </header>
+      <section class="home">
+        <div class="textBox" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="poing">Hi, I'm JiSung</h2>
+          <h2 class="poing">Frontend Developer</h2>
+          <p class="poing">I build websites and I love it!</p>
+        </div>
+        <div class="imgBox" data-aos="fade-left" data-aos-duration="1000">
+          <img src="./img/ar3.png" alt="me" />
+        </div>
+      </section>
+      <section class="aboutMe">
+        <div
+          class="clockContainer"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="title poing">The Clock of Regrets</div>
+          <div class="clock">
+            <div class="num" data-num="0">12</div>
+            <div class="num" data-num="1">1</div>
+            <div class="num" data-num="2">2</div>
+            <div class="num" data-num="3">3</div>
+            <div class="num" data-num="4">4</div>
+            <div class="num" data-num="5">5</div>
+            <div class="num" data-num="6">6</div>
+            <div class="num" data-num="7">7</div>
+            <div class="num" data-num="8">8</div>
+            <div class="num" data-num="9">9</div>
+            <div class="num" data-num="10">10</div>
+            <div class="num" data-num="11">11</div>
+            <div class="stickM"></div>
+            <div class="stickH"></div>
+            <img class="backTo" src="./img/ex.png" alt="sad" />
+          </div>
+        </div>
+        <div class="textBox" data-aos="fade-left" data-aos-duration="1000">
+          <h2 class="poing">I'm a late STARTER</h2>
+          <p class="poing">My major was a Bachelor of Commerce(Accounting)</p>
+          <p class="poing">
+            But I changed my career to Web Development when I was age of 29...
+          </p>
+          <p class="poing">So I'm studying hard to cover that gap</p>
+          <br />
+          <h2 class="poing">EFFORTS will never BETRAY</h2>
+        </div>
+        <div class="selfi" data-aos="fade-right" data-aos-duration="1000">
+          <img class="show" src="./img/me2.png" alt="myself" />
+          <img class="hidden" src="./img/me1.png" alt="myself" />
+          <div class="tag">Unlock Me!</div>
+        </div>
+        <div
+          class="lockerContainer"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="./img/lock-iron3.png" alt="" class="lockIron" />
+          <img src="./img/lock-body.png" alt="" class="lockBody" />
+          <div class="numPad">
+            <div class="digit splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" data-num="1">
+                    <div class="splide__slide__container">
+                      <h2>1</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="2">
+                    <div class="splide__slide__container">
+                      <h2>2</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="3">
+                    <div class="splide__slide__container">
+                      <h2>3</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="4">
+                    <div class="splide__slide__container">
+                      <h2>4</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="5">
+                    <div class="splide__slide__container">
+                      <h2>5</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="6">
+                    <div class="splide__slide__container">
+                      <h2>6</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="7">
+                    <div class="splide__slide__container">
+                      <h2>7</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="8">
+                    <div class="splide__slide__container">
+                      <h2>8</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="9">
+                    <div class="splide__slide__container">
+                      <h2>9</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="0">
+                    <div class="splide__slide__container">
+                      <h2>0</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="digit splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" data-num="1">
+                    <div class="splide__slide__container">
+                      <h2>1</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="2">
+                    <div class="splide__slide__container">
+                      <h2>2</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="3">
+                    <div class="splide__slide__container">
+                      <h2>3</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="4">
+                    <div class="splide__slide__container">
+                      <h2>4</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="5">
+                    <div class="splide__slide__container">
+                      <h2>5</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="6">
+                    <div class="splide__slide__container">
+                      <h2>6</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="7">
+                    <div class="splide__slide__container">
+                      <h2>7</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="8">
+                    <div class="splide__slide__container">
+                      <h2>8</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="9">
+                    <div class="splide__slide__container">
+                      <h2>9</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="0">
+                    <div class="splide__slide__container">
+                      <h2>0</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="digit splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" data-num="1">
+                    <div class="splide__slide__container">
+                      <h2>1</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="2">
+                    <div class="splide__slide__container">
+                      <h2>2</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="3">
+                    <div class="splide__slide__container">
+                      <h2>3</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="4">
+                    <div class="splide__slide__container">
+                      <h2>4</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="5">
+                    <div class="splide__slide__container">
+                      <h2>5</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="6">
+                    <div class="splide__slide__container">
+                      <h2>6</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="7">
+                    <div class="splide__slide__container">
+                      <h2>7</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="8">
+                    <div class="splide__slide__container">
+                      <h2>8</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="9">
+                    <div class="splide__slide__container">
+                      <h2>9</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="0">
+                    <div class="splide__slide__container">
+                      <h2>0</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="digit splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide" data-num="1">
+                    <div class="splide__slide__container">
+                      <h2>1</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="2">
+                    <div class="splide__slide__container">
+                      <h2>2</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="3">
+                    <div class="splide__slide__container">
+                      <h2>3</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="4">
+                    <div class="splide__slide__container">
+                      <h2>4</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="5">
+                    <div class="splide__slide__container">
+                      <h2>5</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="6">
+                    <div class="splide__slide__container">
+                      <h2>6</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="7">
+                    <div class="splide__slide__container">
+                      <h2>7</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="8">
+                    <div class="splide__slide__container">
+                      <h2>8</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="9">
+                    <div class="splide__slide__container">
+                      <h2>9</h2>
+                    </div>
+                  </li>
+                  <li class="splide__slide" data-num="0">
+                    <div class="splide__slide__container">
+                      <h2>0</h2>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tag2">Find Password!</div>
+        </div>
+      </section>
+      <section class="skills">
+        <h2 class="poing" style="width: 100%; margin-top: 80px">
+          Things I Can Do...
+        </h2>
+        <div class="skillList">
+          <div class="box" data-aos="flip-left" onclick="skillOpen(this);">
+            <img src="./img/html.png" alt="html" />
+            <div class="overlay">
+              <div class="title">
+                HTML 5
+                <div class="arrow"><span><</span><span><</span></div>
+              </div>
+              <div class="explain">
+                <p>
+                  Understand: <br />1. HTML Markup<br />2. Semantic tags<br />3.
+                  Web Accessibility
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="flip-right" onclick="skillOpen(this);">
+            <img src="./img/css.png" alt="css" />
+            <div class="overlay">
+              <div class="title">
+                CSS 3
+                <div class="arrow"><span><</span><span><</span></div>
+              </div>
+              <div class="explain">
+                <p>
+                  Usable: Animation, Flex, Grid, Img Control, Transform, Hover,
+                  Pseudo Elements,
+                  <br />Extensions: SASS
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box" onclick="skillOpen(this);" data-aos="flip-left">
+            <img src="./img/js.png" alt="javascript" />
+            <div class="overlay">
+              <div class="title">
+                JavaScript
+                <div class="arrow"><span><</span><span><</span></div>
+              </div>
+              <div class="explain">
+                <p>
+                  Usable: Events (Click, Mouse, Scroll), Fetch, Text Control,
+                  <br />Library: JQuery, Toast UI, AOS, Swiper, Splide, Others
+                  <br />Studying: React, TypeScript
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="box" onclick="skillOpen(this);" data-aos="flip-right">
+            <img src="./img/php.png" alt="javascript" />
+            <div class="overlay">
+              <div class="title">
+                PHP
+                <div class="arrow"><span><</span><span><</span></div>
+              </div>
+              <div class="explain">
+                <p>
+                  Usable: CRUD Query, Login/out, Table, Pagination,
+
+                  <br />PS: I don't prefer Backend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <h2 class="poing" style="width: 100%; margin-top: 40px">
+          Projects I Worked On
+        </h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="subContainer">
+                <div class="imgBox">
+                  <img src="./img/works1.png" alt="project1" />
+                  <div class="side"></div>
+                  <div class="reflection">
+                    <img src="./img/works1.png" alt="project1" />
+                  </div>
+                  <div class="overlay"></div>
+                </div>
+                <div class="infoBox">
+                  <p>Commercial Event</p>
+                  <p>Mobile</p>
+                  <p>Charts, Click Interactions, Admin Pages, Statistics</p>
+                  <p>Lang: HTML, CSS, JS, PHP</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works2.png" alt="project2" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works2.png" alt="project2" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Non-Commercial Event</p>
+                <p>Mobile</p>
+                <p>Charts, Click Interactions, Admin Pages, Statistics</p>
+                <p>Lang: HTML, CSS, JS, PHP</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works3.png" alt="project3" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works3.png" alt="project3" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Public Organization Test</p>
+                <p>Mobile / PC</p>
+                <p>Charts, Click / Drag Interactions</p>
+                <p>Lang: HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works4.png" alt="project4" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works4.png" alt="project4" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Police Messenger</p>
+                <p>Mobile</p>
+                <p>Click / Drag Interactions</p>
+                <p>Lang: HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works5.png" alt="project5" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works5.png" alt="project5" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Public Organization Site</p>
+                <p>Mobile / PC</p>
+                <p>Charts, Click Interactions</p>
+                <p>Lang: HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works6.png" alt="project6" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works6.png" alt="project6" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Public Organization Site</p>
+                <p>Mobile / PC</p>
+                <p>Charts, Click Interactions</p>
+                <p>Lang: HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works7.png" alt="project7" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works7.png" alt="project7" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Non-Commercial Event</p>
+                <p>Mobile / PC</p>
+                <p>Charts, Click Interactions, Admin Pages, Statistics</p>
+                <p>Lang: HTML, CSS, JS, PHP</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works8.png" alt="project8" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works8.png" alt="project8" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Resort Booking Site</p>
+                <p>Mobile / PC</p>
+                <p>Click Interactions</p>
+                <p>Lang: HTML, CSS, JS</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works9.png" alt="project9" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works9.png" alt="project9" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Non-Commercial Event</p>
+                <p>Mobile / PC</p>
+                <p>Charts, Click Interactions, Admin Pages, Statistics</p>
+                <p>Lang: HTML, CSS, JS, PHP</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBox">
+                <img src="./img/works10.png" alt="project10" />
+                <div class="side"></div>
+                <div class="reflection">
+                  <img src="./img/works10.png" alt="project10" />
+                </div>
+                <div class="overlay"></div>
+              </div>
+              <div class="infoBox">
+                <p>Private Tax Service</p>
+                <p>Mobile / PC</p>
+                <p>Click Interactions, Conditional Events</p>
+                <p>Lang: HTML, CSS, JS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="camera">
+          <div class="phone">
+            <div class="front-face">
+              <div class="bezelTop">
+                <div class="speaker"></div>
+              </div>
+              <div class="statusArea">
+                <div class="timeArea">00:00:00</div>
+                <div class="internet">
+                  <span class="antenna"></span>
+                  <span class="antenna"></span>
+                  <span class="antenna"></span>
+                  <span class="antenna"></span>
+                </div>
+                <div class="battery">
+                  <div class="guage"></div>
+                  <div class="tab"></div>
+                </div>
+              </div>
+              <div class="infoArea">
+                <div class="buttons">
+                  <div class="back"><span class="bigger">＜ </span>Search</div>
+                  <div class="edit">Edit</div>
+                </div>
+                <div class="pic">
+                  <img src="./img/me2.png" alt="myself" />
+                </div>
+                <div class="detail">
+                  <h3>Ji Sung</h3>
+                  <h4>Web Developer</h4>
+                </div>
+                <div class="call">
+                  <a href="tel:01091754560"
+                    ><img src="./img/phone-solid.svg" alt="phone" />
+                    <p>Call</p>
+                  </a>
+                  <a href="mailto:kilconl@naver.com"
+                    ><img src="./img/envelope-solid.svg" alt="mail" />
+                    <p>Mail</p>
+                  </a>
+                </div>
+                <div class="other">
+                  <p>Mobile</p>
+                  <a href="tel:01091754560">010-9175-4560</a>
+                </div>
+                <div class="other">
+                  <p>E-mail</p>
+                  <a href="mailto:kilconl@naver.com">kilconl@naver.com</a>
+                </div>
+                <div class="other">
+                  <p>Languages</p>
+                  <a href="javascript:void()">Korean, English, Japanese</a>
+                </div>
+                <div class="bezelBottom">
+                  <div class="homeButton">
+                    <div class="square"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="back-face">
+              <img src="./img/phoneBack.png" alt="ex" />
+            </div>
+            <div class="top-face"></div>
+            <div class="bottom-face"></div>
+            <div class="left-face"></div>
+            <div class="right-face"></div>
+
+            <div class="tr-corner">
+              <div class="piece-1"></div>
+              <div class="piece-2"></div>
+              <div class="piece-3"></div>
+              <div class="piece-4"></div>
+            </div>
+            <!-- / tr-corner -->
+
+            <div class="tl-corner">
+              <div class="piece-5"></div>
+              <div class="piece-6"></div>
+              <div class="piece-7"></div>
+              <div class="piece-8"></div>
+            </div>
+            <!-- / tl-corner -->
+
+            <div class="bl-corner">
+              <div class="piece-9"></div>
+              <div class="piece-10"></div>
+              <div class="piece-11"></div>
+              <div class="piece-12"></div>
+            </div>
+            <!-- / bl-corner -->
+
+            <div class="br-corner">
+              <div class="piece-13"></div>
+              <div class="piece-14"></div>
+              <div class="piece-15"></div>
+              <div class="piece-16"></div>
+            </div>
+            <!-- / br-corner -->
+          </div>
+        </div>
+        <div class="stopContainer">
+          <div class="stopButton" onclick="playButton(this);">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+          </div>
+        </div>
+      </section>
+      <div class="object1"></div>
+      <div class="object2"></div>
+      <div class="object3"></div>
+      <div class="object4"></div>
+      <div class="object5"></div>
+      <div class="object6"></div>
+      <div class="object7"></div>
+      <div class="object8"></div>
+      <div class="object9"></div>
+      <div class="object10"></div>
+    </div>
+  </body>
+  <script>
+    // basic untility functions
+
+    function randomIntFromRange(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    function randomColor(colors) {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function distance(x1, y1, x2, y2) {
+      const xDist = x2 - x1;
+      const yDist = y2 - y1;
+
+      return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
+    }
+
+    // module.exports = { randomIntFromRange, randomColor, distance }
+
+    const canvas = document.querySelector("canvas");
+    const c = canvas.getContext("2d");
+
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
+
+    const colors = ["#2185C5", "#7ECEFD", "#FFF6E5", "#FF7F66"];
+
+    // Objects
+    function Star(x, y, radius, color) {
+      this.x = x;
+      this.y = y;
+      this.radius = radius;
+      this.color = color;
+      this.velocity = {
+        // x: Math.floor((Math.random() - 0.5) * 12),
+        x: 0,
+        y: 1,
+      };
+      this.friction = 0.85;
+      this.gravity = 0.2;
+    }
+
+    Star.prototype.draw = function () {
+      c.save();
+      c.beginPath();
+      c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+      c.fillStyle = this.color;
+      c.shadowColor = "#e3eaef";
+      c.shadowBlur = 20;
+      c.fill();
+      c.closePath();
+      c.restore();
+    };
+
+    Star.prototype.update = function () {
+      this.draw();
+
+      // when star hits bottom of screen
+      if (this.y + this.radius + this.velocity.y > canvas.height / 2) {
+        this.velocity.y = -this.velocity.y * this.friction;
+        this.shatter();
+        biggerCircle();
+      } else {
+        this.velocity.y += this.gravity;
+      }
+
+      this.x += this.velocity.x;
+      this.y += this.velocity.y;
+
+      if (
+        this.x + this.radius + this.velocity > canvas.width ||
+        this.x - this.radius <= 0
+      ) {
+        this.velocity.x = -this.velocity.x * this.friction;
+      }
+    };
+
+    Star.prototype.shatter = function () {
+      this.radius -= 3;
+      for (let i = 0; i < 8; i++) {
+        miniStars.push(new MiniStar(this.x, this.y, 2, "#e3eaef"));
+      }
+      // console.log(miniStars)
+    };
+
+    function MiniStar(x, y, radius, color) {
+      Star.call(this, x, y, radius, color);
+      this.velocity = {
+        x: randomIntFromRange(-5, 5),
+        y: randomIntFromRange(-15, 15),
+      };
+      this.friction = 0.85;
+      this.gravity = 0.1;
+      this.time = 100;
+      this.opacity = 1;
+    }
+
+    MiniStar.prototype.draw = function () {
+      c.save();
+      c.beginPath();
+      c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+      c.fillStyle = `rgba(30, 30, 30, ${this.opacity})`;
+      c.shadowColor = "#33333f";
+      c.shadowBlur = 20;
+      c.fill();
+      c.closePath();
+      c.restore();
+    };
+
+    MiniStar.prototype.update = function () {
+      this.draw();
+
+      // when star hits bottom of screen
+      if (this.y + this.radius + this.velocity.y > canvas.height) {
+        this.velocity.y = -this.velocity.y * this.friction;
+      } else {
+        this.velocity.y += this.gravity;
+      }
+
+      this.x += this.velocity.x;
+      this.y += this.velocity.y;
+      this.time -= 1;
+      this.opacity -= 1 / this.time;
+    };
+
+    let stars;
+    let miniStars;
+    let ticker = 0;
+    let randomSpawnRate = 100;
+
+    function init() {
+      stars = [];
+      miniStars = [];
+
+      for (let i = 0; i < 1; i++) {
+        stars.push(new Star(canvas.width / 2, -10, 9, "#33333f"));
+      }
+
+      for (let i = 0; i < 50; i++) {
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const radius = Math.random() * 4;
+      }
+    }
+    let startIt;
+    // Animation Loop
+    function animate() {
+      startIt = requestAnimationFrame(animate);
+      // setInterval(animate, 1000);
+      // canvas.style.zIndex = -1;
+      // canvas.style.opacity = 0
+      c.fillStyle = "#fff";
+      c.fillRect(0, 0, canvas.width, canvas.height);
+
+      stars.forEach((star, index) => {
+        star.update();
+        if (star.radius == 0) {
+          stars.splice(index, 1);
+        }
+      });
+
+      miniStars.forEach((miniStar, index) => {
+        miniStar.update();
+        if (miniStar.time == 0) {
+          miniStars.splice(index, 1);
+        }
+      });
+
+      // ticker++;
+      // if (ticker % randomSpawnRate == 0) {
+      //   const radius = 9;
+      //   const x = Math.max(radius, Math.random() * canvas.width - radius);
+      //   stars.push(new Star(x, -100, radius, "#33333f"));
+      //   randomSpawnRate = Math.floor(Math.random() * 75) + 100;
+      // }
+    }
+    setTimeout(function () {
+      init();
+      animate();
+    }, 1800);
+
+    setTimeout(function () {
+      cancelAnimationFrame(startIt);
+    }, 5500);
+
+    function biggerCircle() {
+      const targetEl = document.querySelector(".circle");
+      targetEl.classList.add("active");
+      const entry = document.querySelector(".entry");
+      const canvasArea = document.querySelector("canvas");
+      setTimeout(() => {
+        // entry.style.display = "none";
+        entry.classList.add("active");
+        setTimeout(() => {
+          entry.style.display = "none";
+        }, 700);
+      }, 1000);
+    }
+
+    function textEffect() {
+      const piongText = document.querySelectorAll(".poing");
+
+      for (let i = 0; i < piongText.length; i++) {
+        let strPiongText = piongText[i].textContent;
+        let splitText = strPiongText.split("");
+        piongText[i].textContent = "";
+        for (let j = 0; j < splitText.length; j++) {
+          piongText[
+            i
+          ].innerHTML += `<span class="textEffect">${splitText[j]}</span>`;
+        }
+      }
+      hoverEffect();
+    }
+
+    function hoverEffect() {
+      const letters = document.querySelectorAll(".textEffect");
+      for (let i = 0; i < letters.length; i++) {
+        letters[i].addEventListener("mouseenter", () => {
+          if (!letters[i].classList.contains("hover")) {
+            letters[i].classList.add("hover");
+            setTimeout(() => {
+              letters[i].classList.remove("hover");
+            }, 800);
+          }
+        });
+        // letters[i].addEventListener("touchmove", () => {
+        //   if (!letters[i].classList.contains("hover")) {
+        //     letters[i].classList.add("hover");
+        //     setTimeout(() => {
+        //       letters[i].classList.remove("hover");
+        //     }, 800);
+        //   }
+        // });
+      }
+    }
+    const divObejcts = document.querySelectorAll(
+      '.container > div[class^="object"]'
+    );
+    function setShape() {
+      // console.log(divObejcts);
+      const shapes = [
+        "polygon(50% 0%, 0% 100%, 100% 100%)",
+        "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+        "polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)",
+        "polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)",
+        "polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%)",
+        "polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)",
+        "polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)",
+        "circle(50% at 50% 50%)",
+        "polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%)",
+      ];
+      for (let i = 0; i < divObejcts.length; i++) {
+        Object.assign(divObejcts[i].style, {
+          background: `rgb(${randomIntFromRange(0, 255)},${randomIntFromRange(
+            0,
+            255
+          )},${randomIntFromRange(0, 255)})`,
+          clipPath: `${shapes[randomIntFromRange(0, 8)]}`,
+        });
+      }
+    }
+
+    function moveObjects() {
+      const container = document.querySelector(".container");
+      // console.log(container.innerHeight);
+      for (let i = 0; i < divObejcts.length; i++) {
+        Object.assign(divObejcts[i].style, {
+          left: `${randomIntFromRange(0, container.clientWidth - 40)}px`,
+          top: `${randomIntFromRange(0, container.clientHeight - 40)}px`,
+          transform: `rotate(${randomIntFromRange(0, 360)}deg)`,
+        });
+      }
+    }
+
+    let interval = setInterval(() => {
+      moveObjects();
+    }, 4300);
+
+    const random9 = () => {
+      const randomNumber = Math.floor(Math.random() * 10);
+      return randomNumber;
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+      textEffect();
+      setShape();
+      moveObjects();
+
+      const defaultYear = [random9(), random9(), random9(), random9()];
+
+      const splides = document.querySelectorAll(".digit");
+      for (let i = 0; i < splides.length; i++) {
+        new Splide(splides[i], {
+          focus: "center",
+          perPage: 1,
+          trimSpace: true,
+          loop: true,
+          direction: "ttb",
+          wheel: true,
+          type: "loop",
+          // gap: 30,
+          height: 90,
+          arrows: false,
+          pagination: false,
+          start: defaultYear[i],
+          speed: 1000,
+        })
+          .mount()
+          .on("inactive", function () {
+            checkPad();
+          });
+      }
+
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        spaceBetween: 0,
+        draggable: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          1201: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          750: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 100,
+          },
+        },
+      });
+    });
+
+    let timer = null;
+    const delay = 300;
+
+    const checkPad = () => {
+      const argus = [];
+      const fourDigits = document.querySelectorAll(
+        ".digit .splide__slide.is-active.is-visible"
+      );
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        for (let i = 0; i < 4; i++) {
+          if (fourDigits[i] == undefined) {
+            checkPad();
+            return false;
+          }
+          argus.push(fourDigits[i].dataset.num);
+        }
+        isCorrect(argus);
+      }, delay);
+    };
+
+    const correctNum = ["0", "3", "1", "2"];
+    const isCorrect = (arr) => {
+      const imgFilter = document.querySelector(".selfi img.show");
+      const imgHidden = document.querySelector(".selfi img.hidden");
+      const lockIron = document.querySelector(".lockIron");
+      const imgTag = document.querySelector(".selfi .tag");
+      const filterValue = [];
+
+      for (let i = 0; i < arr.length; i++) {
+        const diff = Math.abs(Number(correctNum[i]) - Number(arr[i]));
+        filterValue.push(diff);
+      }
+      if (correctNum.join("") == arr.join("")) {
+        lockIron.classList.add("open");
+        imgFilter.style.filter = "none";
+        imgTag.innerText = `It's Me!`;
+        imgTag.style.width = "70px";
+        imgHidden.style.opacity = "1";
+      } else {
+        lockIron.classList.remove("open");
+        imgFilter.style.filter = ` invert(0.${filterValue[0]}) grayscale(0.${filterValue[1]}) hue-rotate(${filterValue[2]}0deg) blur(${filterValue[3]}px)`;
+        imgTag.innerText = `Unlock Me!`;
+        imgTag.style.width = "100px";
+        imgHidden.style.opacity = "0";
+      }
+    };
+
+    const currentTime = () => {
+      const targetEl = document.querySelector(".timeArea");
+      const today = new Date();
+      const hour =
+        today.getHours() < 10 ? "0" + today.getHours() : today.getHours();
+      const min =
+        today.getMinutes() < 10 ? "0" + today.getMinutes() : today.getMinutes();
+      const second =
+        today.getSeconds() < 10 ? "0" + today.getSeconds() : today.getSeconds();
+
+      targetEl.innerText = `${hour}:${min}:${second}`;
+    };
+
+    const playButton = (self) => {
+      const phone = document.querySelector(".phone");
+      self.classList.toggle("pause");
+      phone.classList.toggle("pause");
+    };
+
+    const skillOpen = (self) => {
+      self.classList.toggle("open");
+    };
+
+    const navFunction = (to, index) => {
+      const targetEl = document.querySelector(`.${to}`);
+      targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      fullText(index);
+      clearInterval(navInterval);
+      if (!navInterval) {
+        setInterval(scrollNav, 500);
+      }
+      setTimeout(function () {
+        navInterval = setInterval(scrollNav, 500);
+      }, 500);
+    };
+
+    const fullText = (targetEl) => {
+      const menus = document.querySelectorAll("ul.mobile li");
+      const menus2 = document.querySelectorAll("ul.pc li");
+      const delay = 70;
+
+      for (menu of menus2) {
+        menu.classList.remove("active");
+      }
+      if (!menus2[targetEl].classList.contains("active")) {
+        menus2[targetEl].classList.add("active");
+      }
+
+      if (menus[targetEl].innerText.length > 1) {
+        return false;
+      }
+      for (let i = 0; i < menus.length; i++) {
+        const texts = menus[i].innerText;
+        if (texts.length > 1) {
+          let newText = texts;
+          for (let j = 1; j < texts.length; j++) {
+            setTimeout(function () {
+              newText = newText.split("");
+              newText.pop();
+              newText = newText.join("");
+              menus[i].innerText = newText;
+            }, j * delay);
+          }
+        }
+      }
+
+      const oriText = menus[targetEl].dataset.ori.split("");
+      if (menus[targetEl].innerText.length > 1) {
+      } else {
+        for (let i = 1; i < oriText.length; i++) {
+          setTimeout(function () {
+            menus[targetEl].innerText += oriText[i];
+          }, i * delay);
+        }
+      }
+    };
+
+    const scrollNav = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollY = window.pageYOffset;
+      const sectionsHeight = [];
+      const sectionsTop = [];
+      for (section of sections) {
+        sectionsHeight.push(section.offsetHeight);
+        sectionsTop.push(section.offsetTop - 200);
+      }
+      for (let i = 0; i < sections.length; i++) {
+        if (
+          scrollY > sectionsTop[i] &&
+          scrollY < sectionsTop[i] + sectionsHeight[i]
+        ) {
+          fullText(i);
+        }
+      }
+    };
+
+    let navInterval = setInterval(scrollNav, 500);
+    setInterval(currentTime, 1000);
+
+    AOS.init({
+      once: true,
+    });
+    checkPad();
+  </script>
+</html>

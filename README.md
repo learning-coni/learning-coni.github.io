@@ -1,2 +1,3 @@
-# learning-coni.github.io
-Portfolio
+# Git Practice
+
+깃 사용 연습
